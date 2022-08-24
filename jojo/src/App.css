@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Ibarra Real Nova', serif;
+    margin: 2% 0 0 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&display=swap');
@@ -28,7 +29,6 @@ body {
 
 .arrow_left:hover, .arrow_right:hover{
     width: 140px;
-    
 }
 
 .character {
@@ -42,4 +42,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.music {
+    position: relative;
+    bottom: 50px;
+    height: 70px;
+    cursor: pointer;   
 }
