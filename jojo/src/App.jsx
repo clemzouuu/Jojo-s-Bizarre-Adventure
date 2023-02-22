@@ -46,7 +46,6 @@ function App() {
     }, 3000)
   }
 
-
   return (
     <div className="App">
       <div className="main"> 
