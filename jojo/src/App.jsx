@@ -2,7 +2,6 @@ import './App.css'
 import data from '../data'
 import React, {useState, useEffect} from "react"
 
-
 function App() {
   // By default, the first character is the first data on the data array.
   const [character, setCharacter] = useState(data[0])
@@ -29,30 +28,28 @@ function App() {
     if (counter > 0) {
       setCounter(counter - 1)
     }
-  }
+  }    
 
-  // A counter to avoid the audio to be played several times before it ends.
-  // If the function is called, play ++, and play plays itself only if it equals 1
-  let play = 0
-  
+  // When the button is clicked, the State turns to a truthy value and the button disapears
+  // After 3 secondes, the value is changed to false, and the button is back --> this is to avoid simultaneous sounds 
+
+  const [changeClassName, setChangeClassName] = useState(false)
+
   function playMusic() {
 
-    play ++
-    if (play == 1) {
-      var audio = new Audio(character.music)
-      audio.play() 
-    }
-
+    var audio = new Audio(character.music)
+    audio.play() 
+    setChangeClassName(true)
     // After 3 seconds, you can listen to the audio again
     setTimeout(() => {
-      play = 0 
+      setChangeClassName(false)
     }, 3000)
   }
 
 
   return (
     <div className="App">
-      <div className="main">
+      <div className="main"> 
         <img src="../img/logo.png" alt="logo JBA" />
         <h1>{character.name}</h1>
 
@@ -75,7 +72,7 @@ function App() {
           className="arrow_right"
           onClick={nextCharacter}
         />
-        <img className="music" onClick={playMusic} src="../svg/sound_on.svg" />
+        <img className={changeClassName ? 'musicOff' : 'music'} onClick={playMusic} src="../svg/sound_on.svg" id="musicLogo"/>
       </div>
     </div>
   )

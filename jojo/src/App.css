@@ -46,7 +46,11 @@ body {
 
 .music {
     position: relative;
-    bottom: 50px;
+    bottom: 120px;
     height: 70px;
     cursor: pointer;   
+}
+
+.musicOff{
+    display: none;
 }
