@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <div className="main"> 
-        <img src="../img/logo.png" alt="logo JBA" />
+        <img src="../img/logo.png" alt="logo JBA" className='img'/>
         <h1>{character.name}</h1>
 
         <img

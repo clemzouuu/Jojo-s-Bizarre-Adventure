@@ -44,13 +44,17 @@ body {
     justify-content: center;
 }
 
-.music {
+.music {    
     position: relative;
-    bottom: 120px;
-    height: 70px;
-    cursor: pointer;   
+    bottom: 190px;
+    height: 60px;
+    cursor: pointer;  
 }
 
 .musicOff{
     display: none;
+}
+
+.img {
+    height: 100px;
 }
