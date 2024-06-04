@@ -1,60 +1,60 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Ibarra Real Nova', serif;
-    margin: 2% 0 0 0;
+  background-color: black;
+  color: white;
+  font-family: 'Ibarra Real Nova', serif;
+  margin: 2% 0 0 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&display=swap');
 
 .arrow_right{
-    height: 100px;
-    width: 100px;
-    position: relative;
-    bottom: 450px;
-    left:300px;
-    cursor: pointer;
-    transition : width 1s;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 450px;
+  left:300px;
+  cursor: pointer;
+  transition : width 1s;
 }
 
 .arrow_left{
-    height: 100px;
-    width: 100px;
-    position: relative;
-    top: 150px;
-    right:300px;
-    cursor: pointer; 
-    transition : width 1s;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 150px;
+  right:300px;
+  cursor: pointer; 
+  transition : width 1s;
 }
 
 .arrow_left:hover, .arrow_right:hover{
-    width: 140px;
+  width: 140px;
 }
 
 .character {
-    height: 500px;
-    position: relative;
-    bottom: 100px;
+  height: 500px;
+  position: relative;
+  bottom: 100px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .music {    
-    position: relative;
-    bottom: 190px;
-    height: 60px;
-    cursor: pointer;  
+  position: relative;
+  bottom: 190px;
+  height: 60px;
+  cursor: pointer;  
 }
 
 .musicOff{
-    display: none;
+  display: none;
 }
 
 .img {
-    height: 100px;
+  height: 100px;
 }
